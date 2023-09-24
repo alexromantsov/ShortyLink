@@ -12,7 +12,7 @@ _ShortyLink_ - это API-сервис на FastAPI для сокращения 
 1. Создать короткую ссылку:
 
 * **Method**: POST
-* **Endpoint**: /generate_short_url/
+* **Endpoint**: `/generate_short_url/`
 * **Body**: JSON с длинной ссылкой, например: `{"long_url": "https://github.com/alexromantsov/ShortyLink"}`
 
 
