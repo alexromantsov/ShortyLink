@@ -55,7 +55,7 @@ async def get_long_url(
         raise HTTPException(status_code=404, detail="Short URL not found")
 
     # Кэшируем длинную ссылку в Redis
-    redis_cache.setex(short_url, 3600, long_url_data["long_url"])  # Время указывается в секундах
+    redis_cache.setex(short_url, 3600, long_url_data["long_url"])  # Время указываем в секундах
     return {"long_url": long_url_data["long_url"]}
 
 
